@@ -1,0 +1,2 @@
+SimConnect 0.4.26
+ttkbootstrap 1.10.1
