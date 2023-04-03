@@ -1,0 +1,1 @@
+# msfs-auto-lights
