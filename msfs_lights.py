@@ -1,6 +1,7 @@
 from SimConnect import *
 from enum import Enum
 
+
 # ---- See License at bottom of file ----
 
 class AirplaneLights(Enum):
@@ -14,6 +15,7 @@ class AirplaneLights(Enum):
     RUNWAY_TURN_OFF = "RUNWAY TURN OFF LIGHTS"
     RECOGNITION = "RECOGNITION LIGHTS"
 
+
 # get IS_NIGHT from simconnect
 def is_night():
     sm = SimConnect()
@@ -22,6 +24,7 @@ def is_night():
     sm.exit()
     return results
 
+# get the airplanes current altitude
 def get_airplane_altitude():
     sm = SimConnect()
     aq = AircraftRequests(sm)
@@ -29,6 +32,7 @@ def get_airplane_altitude():
     sm.exit()
     return altitude
 
+# check if the plane is on the ground
 def is_on_ground():
     sm = SimConnect()
     aq = AircraftRequests(sm)
@@ -36,7 +40,7 @@ def is_on_ground():
     sm.exit()
     return on_ground
 
-
+# get time in Zulu * not used but leaving it for now *
 def get_msfs_time_of_day():
     sm = SimConnect()
     aq = AircraftRequests(sm)
@@ -44,15 +48,7 @@ def get_msfs_time_of_day():
     sm.exit()
     return zulu_time
 
-
-def get_airplane_altitude():
-    sm = SimConnect()
-    aq = AircraftRequests(sm)
-    altitude = aq.get("PLANE_ALTITUDE")
-    sm.exit()
-    return altitude
-
-
+# set the airplane lights ON/OFF
 def set_airplane_light_value(light: AirplaneLights, value: bool):
     sm = SimConnect()
     aq = AircraftRequests(sm)
@@ -75,7 +71,7 @@ def set_airplane_light_value(light: AirplaneLights, value: bool):
         aq.set("LIGHT RECOGNITION ON", int(value))
     sm.exit()
 
-
+# get the airplanes lights value (ON/OFF)
 def get_airplane_light_values():
     # Establish a connection to the simulator
     sm = SimConnect()
@@ -91,26 +87,26 @@ def get_airplane_light_values():
 
 # --------- license info ---------------------------------------------------#
 
-#MIT License
+# MIT License
 
-#Copyright (c) 2023 - Jeremy Stevens
+# Copyright (c) 2023 - Jeremy Stevens
 
-#Permission is hereby granted, free of charge, to any person obtaining a copy
-#of this software and associated documentation files (the "Software"), to deal
-#in the Software without restriction, including without limitation the rights
-#to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-#copies of the Software, and to permit persons to whom the Software is
-#furnished to do so, subject to the following conditions:
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
 
-#The above copyright notice and this permission notice shall be included in all
-#copies or substantial portions of the Software.
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
 
-#THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-#IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-#FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-#AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-#LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-#OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-#SOFTWARE.
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 # -------------------- end of license info ---------------------------------------
