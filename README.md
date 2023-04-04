@@ -1,4 +1,5 @@
-~~# msfs-auto-lights
+# msfs-auto-lights
+
 Current Version - version 1.0 - Beta 
 <hr>
 (this project is a work in progress)
