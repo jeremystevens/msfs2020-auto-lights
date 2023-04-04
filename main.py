@@ -84,7 +84,7 @@ def create_checkbox_grid(root):
     copyright_label = ttk.Label(root, text="Copyright 2023 - Jeremy Stevens", font=("Arial", 8))
     copyright_label.grid(row=row + 2, column=1, pady=(0, 5), sticky="w")
 
-# main entry point 
+# main entry point
 def main():
     global root
     root = tk.Tk()
