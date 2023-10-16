@@ -9,7 +9,7 @@
 
 ## About msfs-auto-lights
 
-msfs-auto-lights is a sophisticated program designed to enhance your flight experience in Microsoft Flight Simulator. It automates airplane light control, allowing you to focus on piloting while it manages lights as if a co-pilot were in charge.
+msfs-auto-lights is a program designed to enhance your flight experience in Microsoft Flight Simulator. It automates airplane light control, allowing you to focus on piloting while it manages lights as if a co-pilot were in charge.
 
 ## Features
 
