@@ -1,25 +1,36 @@
 # msfs-auto-lights
 
-Current Version - version 1.0 - Beta 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jeremystevens/msfs-auto-lights)
+![GitHub license](https://img.shields.io/github/license/jeremystevens/msfs-auto-lights)
+
+**Current Version:** 1.0 (Beta)
 <hr>
-(this project is a work in progress)
+**Note:** This project is a work in progress.
 
-## About msfs-auto-lights 
+## About msfs-auto-lights
 
-this program will control the airplane lights for you as if the co-pilot is controling the lights so you can focus on flying the plane
+msfs-auto-lights is a sophisticated program designed to enhance your flight experience in Microsoft Flight Simulator. It automates airplane light control, allowing you to focus on piloting while it manages lights as if a co-pilot were in charge.
 
-## Features 
-- Landing Lights on/off above/below 10K
-- Exterior lights on/off based on time of day
-- Interior lights on/off based on time of day
-- More features coming soon
+## Features
 
-### *** Notice ****
-#### this program is not designed to manually control the lights
-you won't be able to turn the lights on/off with this application, and it may interfere with controlling the lights in the game
-so you will have to disable it if you want to control the lights manually.
+- **Landing Lights**: Automatically toggles landing lights based on altitude (above/below 10,000 feet).
+- **Exterior Lights**: Intelligently manages exterior lights based on the time of day.
+- **Interior Lights**: Provides automated control of interior lights in sync with the time of day.
+- More features are in development and will be available soon.
 
+### **Notice**
+#### This program is not intended for manual light control.
 
-# screenshot
-Beta version 0.1 
-<img src="https://i.ibb.co/5RW3VWD/sim-screenshot.png" alt="sim-screenshot" border="0">
+Please be aware that msfs-auto-lights is not designed for manual light control. It does not allow manual toggling of lights. Additionally, using this program may interfere with your ability to control lights manually in the game. If you wish to have manual control over lights, you will need to disable this program.
+
+# Screenshot
+**Beta Version 0.1**
+![Screenshot](https://i.ibb.co/5RW3VWD/sim-screenshot.png)
+
+## Release
+
+For the latest release information, please visit the [Releases](https://github.com/jeremystevens/msfs-auto-lights/releases) section.
+
+## License
+
+msfs-auto-lights is an open-source project released under the MIT License. See the [LICENSE](LICENSE) file for details.
