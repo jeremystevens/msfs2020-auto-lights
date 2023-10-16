@@ -3,7 +3,7 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jeremystevens/msfs-auto-lights)
 ![GitHub license](https://img.shields.io/github/license/jeremystevens/msfs-auto-lights)
 
-**Current Version:** 1.0 (Beta)
+**Current Version:** 0.0.1 (Beta)
 <hr>
 **Note:** This project is a work in progress.
 
